@@ -21,4 +21,13 @@ public class MonsterManager {
             monsterList.add(monster);
         }
     }
+
+    // 更新怪物与子弹的坐标的方法
+    public static void updatePosition(int shift){
+        Monster monster=null;
+        // 定义一个集合，保存所有将要被删除的怪物
+        List<Monster> delList=new ArrayList<>();
+
+
+    }
 }

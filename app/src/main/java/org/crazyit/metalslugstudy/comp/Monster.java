@@ -153,8 +153,6 @@ public class Monster {
         }
     }
 
-
-
     // 定义发射子弹的方法
     public void addBullet(){
         int bulletType=getBulletType();

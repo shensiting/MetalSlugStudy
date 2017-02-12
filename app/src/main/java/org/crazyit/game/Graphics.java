@@ -2,6 +2,7 @@ package org.crazyit.game;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 
 /**
  * @Author stshen.
@@ -21,6 +22,12 @@ public class Graphics {
     public static final int TIMES_SCALE = 20;
 
     public static final float INTERVAL_SCALE = 0.05f; // 每次缩放的梯度
+    public static void drawBorderString(Canvas c, int borderColor,
+                                        int textColor, String text, int x, int y, int borderWidth, Paint mPaint)
+    {
+
+    }
+
     // 用于从源位图中的srcX、srcY点开始、挖取宽width、高height的区域，并对该图片进行trans变换、
     // 缩放scale（当scale为20时表示不缩放）、并旋转degree角度后绘制到Canvas的drawX、drawY处。
     public synchronized static void drawMatrixImage(Canvas canvas, Bitmap src,
@@ -28,4 +35,5 @@ public class Graphics {
             int drawY, int degree, int scale){
 
     }
+
 }

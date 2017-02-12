@@ -56,9 +56,8 @@ public class Bullet
     public int getSpeedX()
     {
         // 根据玩家的方向来计算子弹方向和移动方向
-        int sign = dir == Player.DIR_RIGHT ? 1 : -1;
-        switch (type)
-        {
+        int sign=dir==Player.DIR_RIGHT?1:-1;
+        switch (type){
             // 对于第1种子弹，以12为基数来计算它的速度
             case BULLET_TYPE_1:
                 return (int) (ViewManager.scale * 12) * sign;
@@ -74,6 +73,7 @@ public class Bullet
             default:
                 return (int) (ViewManager.scale * 8) * sign;
         }
+
     }
 
     // 根据子弹类型来计算子弹在Y方向上的速度
